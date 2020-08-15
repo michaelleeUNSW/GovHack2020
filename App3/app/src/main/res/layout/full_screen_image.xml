@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".FullScreenImage">
+
+    <ImageView
+        android:id="@+id/imgDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:scaleType="fitCenter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:src="@drawable/close" />
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:scaleType="fitCenter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@id/btnClose"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:src="@drawable/delete" />
+
+</RelativeLayout>

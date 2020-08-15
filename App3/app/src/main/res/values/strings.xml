@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App3</string>
+    <string name="facebook_app_id">534269847086800</string>
+    <string name="fb_login_protocol_scheme">fb534269847086800</string>
+    <string name="Clarifai_API_Key">6151337596614cd59034a09878d9bd62</string>
+    <string name="chip_hint">Press \'Done\' to submit new tag      ......</string>
+    <string name="title_activity_isbnscanner">ISBNScanner</string>
+
+</resources>
