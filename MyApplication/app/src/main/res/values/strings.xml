@@ -1,5 +1,0 @@
-<resources>
-    <string name="clarifai_api_key">b118ddc15c7e493b8d5f5b2c48e077ee</string>
-    <string name="error_while_contacting_api">Error while contacting Clarifai API</string>
-    <string name="app_name">My Application</string>
-</resources>
