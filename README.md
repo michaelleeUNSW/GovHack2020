@@ -1,5 +1,4 @@
-# CircEx Backend Server<br>
-Written in Django <br>
-To start the backend server, run:<br>
-./CircEx_book python manage.py runserver<br>
-login page runs on http://127.0.0.1:8000/admin
+# The Freers APP
+
+TO LEARN MORE:
+[![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi/mE-MUyIRrY8/mq3.jpg?sqp=CMi34_kF&rs=AOn4CLDomZ4X8I9EvU0zQOU2d8Q-nz5hsQ)](https://youtu.be/mE-MUyIRrY8)
