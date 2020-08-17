@@ -3,8 +3,6 @@ package com.example.boone.app3;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.google.gson.JsonObject;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -21,23 +19,7 @@ import okhttp3.Response;
 
 public abstract class client_call {
     private String token;
-    public Request.Builder authorisation(Request.Builder RB) throws JSONException{
-        return JsonRequest(RB.addHeader("Content-Language", "en-US")
-                .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", TextUtils.htmlEncode("Bearer " + token)));
-    }
 
-    abstract void OnResponse(JSONObject data, Response response);
-    public void OnFailure(){};
-
-    public Request.Builder JsonRequest(Request.Builder RB) throws JSONException{return RB;};
-    /*Sample Body
-        JSONObject jsonObject = new JSONObject();
-        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
-        RequestBody body = RequestBody.create(JSON, jsonObject.toString());
-        return RB.url("https://api.sandbox.ebay.com/sell/inventory/v1/inventory_item/water-bottle")
-                .put(body);
-     */
     client_call(String T) {
         token = T;
         OkHttpClient client = new OkHttpClient.Builder()
@@ -78,5 +60,21 @@ public abstract class client_call {
         }
 
     }
+
+    public Request.Builder authorisation(Request.Builder RB) throws JSONException{
+        return JsonRequest(RB.addHeader("Content-Language", "en-US")
+                .addHeader("Content-Type", "application/json")
+                .addHeader("Authorization", TextUtils.htmlEncode("Bearer " + token)));
+    }
+    abstract void OnResponse(JSONObject data, Response response);
+    public void OnFailure(){};
+    public Request.Builder JsonRequest(Request.Builder RB) throws JSONException{return RB;};
+    /*Sample Body
+        JSONObject jsonObject = new JSONObject();
+        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+        RequestBody body = RequestBody.create(JSON, jsonObject.toString());
+        return RB.url("https://api.sandbox.ebay.com/sell/inventory/v1/inventory_item/water-bottle")
+                .put(body);
+     */
 
 }

@@ -216,7 +216,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-             <EditText
+            <EditText
                 android:id="@+id/productTitle"
                 android:layout_width="fill_parent"
                 android:layout_height="52dp"
@@ -245,7 +245,7 @@
                 android:textColor="#a3a3a3"
                 android:background="@null"
                 android:gravity="start" />
-                <!--android:textFontWeight="light"-->
+            <!--android:textFontWeight="light"-->
 
             <TextView
                 android:id="@+id/other"
@@ -262,15 +262,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
 
-<!--            <Button-->
-<!--                android:id="@+id/listItemButton"-->
-<!--                android:layout_width="fill_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="List Item"-->
-<!--                android:textSize="20dp"-->
-<!--                android:background="@android:color/holo_red_light"-->
-<!--                android:textColor="#ffffff"-->
-<!--                android:textAllCaps="false"/>-->
+            <!--            <Button-->
+            <!--                android:id="@+id/listItemButton"-->
+            <!--                android:layout_width="fill_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="List Item"-->
+            <!--                android:textSize="20dp"-->
+            <!--                android:background="@android:color/holo_red_light"-->
+            <!--                android:textColor="#ffffff"-->
+            <!--                android:textAllCaps="false"/>-->
             <Button
                 android:id="@+id/IsbnScan"
                 android:layout_width="fill_parent"
